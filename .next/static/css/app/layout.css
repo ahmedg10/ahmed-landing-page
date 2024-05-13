@@ -573,8 +573,17 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+.pointer-events-none {
+  pointer-events: none;
+}
+.visible {
+  visibility: visible;
+}
 .fixed {
   position: fixed;
+}
+.absolute {
+  position: absolute;
 }
 .relative {
   position: relative;
@@ -607,6 +616,9 @@ video {
 .grid {
   display: grid;
 }
+.hidden {
+  display: none;
+}
 .h-6 {
   height: 1.5rem;
 }
@@ -614,6 +626,12 @@ video {
   height: 2rem;
 }
 .h-\[100vh\] {
+  height: 100vh;
+}
+.h-\[50px\] {
+  height: 50px;
+}
+.h-screen {
   height: 100vh;
 }
 .max-h-12 {
@@ -625,20 +643,23 @@ video {
 .w-10\/12 {
   width: 83.333333%;
 }
+.w-4 {
+  width: 1rem;
+}
 .w-8 {
   width: 2rem;
 }
 .w-\[260px\] {
   width: 260px;
 }
+.w-\[50px\] {
+  width: 50px;
+}
 .w-full {
   width: 100%;
 }
 .w-px {
   width: 1px;
-}
-.w-4 {
-  width: 1rem;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -676,17 +697,20 @@ video {
 .rounded-md {
   border-radius: 0.375rem;
 }
-.rounded-lg {
-  border-radius: 0.5rem;
-}
 .rounded-sm {
   border-radius: 0.125rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.border {
+  border-width: 1px;
 }
 .border-\[1\.5px\] {
   border-width: 1.5px;
 }
-.border {
-  border-width: 1px;
+.border-\[2px\] {
+  border-width: 2px;
 }
 .border-r {
   border-right-width: 1px;
@@ -697,11 +721,34 @@ video {
 .border-current {
   border-color: currentColor;
 }
-.bg-\[\#FFEEC\] {
-  background-color: #FFEEC;
+.border-gray-400\/30 {
+  border-color: rgb(156 163 175 / 0.3);
+}
+.border-\[\#F96611\]\/30 {
+  border-color: rgb(249 102 17 / 0.3);
+}
+.border-\[\#F96611\]\/50 {
+  border-color: rgb(249 102 17 / 0.5);
+}
+.border-\[\#F96611\]\/80 {
+  border-color: rgb(249 102 17 / 0.8);
+}
+.border-\[\#F96611\]\/60 {
+  border-color: rgb(249 102 17 / 0.6);
+}
+.border-\[\#F96611\]\/40 {
+  border-color: rgb(249 102 17 / 0.4);
+}
+.bg-\[\#FFFEEC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 254 236 / var(--tw-bg-opacity));
 }
 .bg-black\/10 {
   background-color: rgb(0 0 0 / 0.1);
+}
+.bg-red-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
 }
 .bg-slate-300 {
   --tw-bg-opacity: 1;
@@ -711,20 +758,20 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-\[\#FFFEEC\] {
+.bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 254 236 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .p-4 {
   padding: 1rem;
 }
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .py-px {
   padding-top: 1px;
@@ -742,24 +789,20 @@ video {
 .text-right {
   text-align: right;
 }
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+.text-\[9px\] {
+  font-size: 9px;
 }
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-\[9px\] {
-  font-size: 9px;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .font-bold {
   font-weight: 700;
@@ -770,13 +813,13 @@ video {
 .leading-tight {
   line-height: 1.25;
 }
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
 .text-\[\#01A977\] {
   --tw-text-opacity: 1;
   color: rgb(1 169 119 / var(--tw-text-opacity));
+}
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 .mix-blend-multiply {
   mix-blend-mode: multiply;
@@ -786,8 +829,22 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .duration-200 {
   transition-duration: 200ms;
+}
+.duration-300 {
+  transition-duration: 300ms;
+}
+.duration-150 {
+  transition-duration: 150ms;
+}
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .scroll-to-top-btn:hover svg path {
@@ -808,6 +865,10 @@ video {
 
 .hover\:bg-black\/5:hover {
   background-color: rgb(0 0 0 / 0.05);
+}
+
+.group:hover .group-hover\:stroke-\[\#F96611\] {
+  stroke: #F96611;
 }
 
 @media (min-width: 768px) {
