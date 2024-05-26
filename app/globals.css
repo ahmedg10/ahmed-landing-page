@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinning-animation:hover svg {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: spinning 1s linear infinite; /* Adjusted duration for faster rotation */
+}
 .scroll-to-top-btn:hover svg path {
   stroke: #000; /* Change to desired hover color */
   transition-property: color, background-color, border-color, box-shadow, fill,
