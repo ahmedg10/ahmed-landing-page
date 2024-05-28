@@ -6,7 +6,7 @@ import React from "react";
 export default function FooterMenu() {
   return (
     <div className="toolbar fixed bottom-5 inline-flex max-h-12 items-center overflow-hidden rounded-full border-[#AFAAA] border-[1.5px] bg-white py-4 pl-4 pr-2">
-      <div className="mr-3 text-sm text-gray-400">1 Component</div>
+      <div className="mr-3 text-sm text-gray-400">2 Components</div>
       <div className="h-6 w-px rounded-full bg-black/10 mr-5"></div>
       <div className="inline-flex gap-[2px] mr-2 items-center">
         <ScrollLink to="top-of-page" smooth={true} duration={750}>

@@ -80,15 +80,16 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative flex w-full flex-col items-start gap-12 md:flex-row md:gap-x-40 ">
+        <div className="second-widget relative flex w-full flex-col items-start gap-12 md:flex-row md:gap-x-40 ">
           <div className="flex flex-col gap-4 md:gap-9 w-full md:w-[256px]">
             <div className="flex gap-3 flex-col w-full">
               <h2 className="text-sm font-medium selection:bg-[#F96611]/80">
-                Copy Button
+                Feedback Widget
               </h2>
               <p className="text-sm text-gray-500 leading-relaxed selection:bg-[#F96611]/80 selection:text-black">
-                Understanding a component solution that addresses visual form of
-                copying without having text take up visual space
+                This component was practicing how to properly animate a button
+                to a different sized layout smoothly, while understanding the
+                importance of micro-interactions.
               </p>
             </div>
             <div className="flex gap-2 flex-wrap">
@@ -100,6 +101,9 @@ export default function Home() {
               </div>
               <div className="text-[12px] bg-slate-200 text-slate-500 w-fit rounded-md pl-2 pr-2 pt-[2px] pb-[2px] ">
                 tailwindcss
+              </div>
+              <div className="text-[12px] bg-slate-200 text-slate-500 w-fit rounded-md pl-2 pr-2 pt-[2px] pb-[2px] ">
+                #micro-interactions
               </div>
             </div>
           </div>
